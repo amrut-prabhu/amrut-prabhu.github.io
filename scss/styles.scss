@@ -1,11 +1,4 @@
 /*!
-    Title: Dev Portfolio Template
-    Version: 1.2.1
-    Last Change: 08/28/2017
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
-
     Description: This file contains all the styles associated with the page
     that don't come from third party libraries. This file gets compiled using
     Gulp and send to the /css folder which is then loaded on the page.
@@ -342,6 +335,7 @@ footer {
 
 #to-top {
     color: #fff;
+    padding-top: 3px;
     @include transition();
 
     &:hover {
@@ -373,6 +367,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    padding-top: 20px;
 
     h1, h2 {
         margin: 0;
@@ -446,7 +441,7 @@ footer {
     i {
         animation: pulsate 1.5s ease;
         animation-iteration-count: infinite;
-        padding-top: 5px;
+        padding-top: 7px;
     }
 }
 
@@ -481,6 +476,24 @@ footer {
     p {
         color: $text;
         margin: 0;
+        text-align: justify;
+        padding: 3px 0;
+    }
+}
+
+#amrut-photo {
+    padding: 5px;
+    text-align: center;
+    color: $text;
+    font-style: italic;
+    font-size: 14px;
+
+    img {
+        max-width: 600px;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -852,6 +865,10 @@ footer {
         margin: 0 0 15px 0;
         color: #fff;
         font-weight: 500;
+    }
+
+    p {
+        color: lighten($text, 40%);
     }
 }
 

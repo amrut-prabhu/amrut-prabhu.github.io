@@ -9,7 +9,7 @@
     	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
@@ -26,6 +26,11 @@
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <ul id="menu" class="shadow">
+            <li>
+                <a href="#lead">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </a>
+            </li>
             <li>
                 <a href="#about">About</a>
             </li>
@@ -48,14 +53,20 @@
                 <a href="#contact">Contact</a>
             </li>
             <li>
+                <a href="https://medium.com/@amrut08" class="no-scroll" target="_blank">
+                    <i class="fab fa-medium" aria-hidden="true"></i>
+                    Blog
+                </a>
+            </li>
+            <li>
                 <a href="https://github.com/amrut-prabhu" class="no-scroll" target="_blank">
-                     <i class="fa fa-github" aria-hidden="true"></i>
+                     <i class="fab fa-github" aria-hidden="true"></i>
                      GitHub
                 </a>
             </li>
             <li>
                 <a href="https://linkedin.com/in/amrutprabhu" class="no-scroll" target="_blank">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
                     LinkedIn
                 </a>
             </li>
@@ -85,14 +96,23 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h2 class="heading">About Me</h2>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-9">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                        Hi there! I'm Amrut. I'm pursuing my undergraduate degree in Computer Science (CS) at the National University of Singapore.
+                        At the moment, I'm looking for an internship opportunity for summer 2019.
+                    </p>
+                    <p>
+                        Just a wild guess, but you're probably here to know more about me. Right? Admittedly, I'm not really that good at talking about myself, but I'll give it a shot and try to tell you things that you can't find in the other sections below.
+                    </p>
+                    <div id="amrut-photo">
+                        <img src="images/amrut.jpg" alt="Photo of Amrut">
+                        Yeah, photos are not my strong suit...
+                    </div>
+                    <p>
+                        My main interests in CS lie in Software Engineering and Artificial Intellligence. This has largely determined the nature of projects that I've worked on. However, I have also worked on non-technical projects like this one, that focus on product development and ideas rather than the actual implementation (like <a href="#project-giveback-blockchain">this</a> and <a href="#project-oral-b">this</a>).
                     </p>
                 </div>
             </div>
@@ -212,6 +232,22 @@
                 <!-- End .project -->
 
                 <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Project Name Here</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div id="project-oral-b" class="project shadow-large">
                     <div class="project-image">
                         <img src="images/project.jpg" />
                     </div>
@@ -358,9 +394,11 @@
 
     <div id="contact">
         <h2>Get in Touch</h2>
+        <p>Enter your email and message, and then press send. Remember to click the box on the redirected Formspree page (sorry about that!).</p>
         <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
+            <form id="send-email-form" method="POST">
+                <input type="hidden" name="_subject" value="Contact request from my personal website" />
+                <input type="text" name="_gotcha" style="display:none" />
                 <input type="email" name="_replyto" placeholder="Your email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
                 <button type="submit">Send</button>
@@ -386,13 +424,16 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/amrut-prabhu" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/amrut-prabhu" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://linkedin.com/in/amrutprabhu" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://linkedin.com/in/amrutprabhu" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/amrut_prabhu" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/amrut_prabhu" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://medium.com/@amrut08" target="_blank"><i class="fab fa-medium" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>

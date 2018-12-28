@@ -403,6 +403,10 @@
                 <textarea name="message" placeholder="Your message" required></textarea>
                 <button type="submit">Send</button>
             </form>
+            <script>
+                var contactform =  document.getElementById('send-email-form');
+                contactform.setAttribute('action', 'https://formspree.io/' + 'amrut08' + '@' + 'gmail' + '.' + 'com');
+            </script>
         </div>
         <!-- End #contact-form -->
     </div>

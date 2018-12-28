@@ -1,11 +1,4 @@
 /*!
-    Title: Dev Portfolio Template
-    Version: 1.2.1
-    Last Change: 08/27/2017
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
-
     Description: This file contains all the scripts associated with the single-page
     portfolio website.
 */
@@ -15,7 +8,7 @@
     // Remove no-js class
     $('html').removeClass('no-js');
 
-    // Animate to section when nav is clicked
+    // Animate to section when nav bar option is clicked
     $('header a').click(function(e) {
 
         // Treat as normal link if no-scroll class
@@ -36,12 +29,13 @@
         }
     });
 
+    // Animate to project when hyperlink is clicked
     $(document).ready(function() {
-        $('a[href*=\\#]').on('click', function(e){
+        $('a[href*=\\#project]').on('click', function(e){
             e.preventDefault();
 
             var hyperlink = $(this).attr('href');//this.hash;
-            var scrollDistance = $(hyperlink).offset().top;
+            var scrollDistance = $(hyperlink).offset().top - 90;
             $('html, body').animate({
                 scrollTop : scrollDistance + 'px'
             }, 500); // Fixed scroll time of 500 ms

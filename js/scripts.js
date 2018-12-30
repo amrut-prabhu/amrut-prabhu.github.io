@@ -43,7 +43,7 @@
 
     // Animate to project when hyperlink is clicked
     $(document).ready(function() {
-        $('a[href*=\\#project]').on('click', function(e){
+        $('a[href*=\\#project-]').on('click', function(e){
             e.preventDefault();
 
             var hyperlink = $(this).attr('href');//this.hash;
@@ -110,6 +110,18 @@
         e.preventDefault();
         $(this).fadeOut(300, function() {
             $('#more-projects').fadeIn(300);
+            $('#view-less-projects').fadeIn(300);
+        });
+    });
+
+    // Collapse additional projects
+    $('#view-less-projects').click(function(e){
+        e.preventDefault();
+        $(this).fadeOut(300, function() {
+            $('#last-visible-project').click();
+            $('#more-projects').fadeOut(300, function(e){
+                $('#view-more-projects').fadeIn(300);
+            });
         });
     });
 

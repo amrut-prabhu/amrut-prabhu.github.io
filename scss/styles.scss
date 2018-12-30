@@ -301,6 +301,21 @@ footer {
     }
 }
 
+.btn-rounded-blue {
+    display: inline-block;
+    color: $base-color;
+    padding: 15px 25px;
+    border: 3px solid $base-color-hover;
+    border-radius: 30px;
+    @include transition();
+
+    &:hover {
+        color: #fff;
+        background:  $base-color-hover;
+        text-decoration: none;
+    }
+}
+
 .shadow {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -487,10 +502,13 @@ footer {
 
 #amrut-photo {
     padding: 5px;
-    text-align: center;
-    color: $text;
-    font-style: italic;
-    font-size: 14px;
+
+    p {
+        text-align: center;
+        color: $text;
+        font-style: italic;
+        font-size: 14px;
+    }
 
     img {
         max-width: 300px;
@@ -704,6 +722,14 @@ footer {
 
 .project-image {
     float: left;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .project-info {
@@ -978,7 +1004,6 @@ footer {
 @media only screen and (max-width: 750px) {
 
     #amrut-photo {
-
         img {
             width: 80%;
             margin-left: auto;
@@ -1043,6 +1068,12 @@ footer {
 
         p {
             text-align: left;
+        }
+
+        #amrut-photo {
+            p {
+                text-align: center;
+            }
         }
     }
 

@@ -8,12 +8,13 @@
     <title>Amrut Prabhu</title>
     	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> <!-- Google font -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> <!-- Devicon -->
     <link href="css/styles.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 
 <body>
@@ -96,10 +97,22 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <h2 class="heading">About Me</h2>
                 </div>
-                <div class="col-md-9">
+                <!-- End of heading column -->
+
+                <div class="col-md-3 col-md-push-7">
+                    <div id="amrut-photo">
+                        <a href="images/amrut.jpg" target="_blank">
+                            <img src="images/amrut.jpg" alt="Photo of Amrut">
+                        </a>
+                        <!-- Yeah, photos are not my strong suit... -->
+                    </div>
+                </div>
+                <!-- End of image column -->
+
+                <div class="col-md-7 col-md-pull-3">
                     <p>
                         Hi there! I'm Amrut. I'm pursuing my undergraduate degree in Computer Science (CS) at the National University of Singapore.
                         At the moment, I'm looking for an internship opportunity for summer 2019.
@@ -107,16 +120,17 @@
                     <p>
                         Just a wild guess, but you're probably here to know more about me. Right? Admittedly, I'm not really that good at talking about myself, but I'll give it a shot and try to tell you things that you can't find in the other sections below.
                     </p>
-                    <div id="amrut-photo">
-                        <img src="images/amrut.jpg" alt="Photo of Amrut">
-                        Yeah, photos are not my strong suit...
-                    </div>
                     <p>
-                        My main interests in CS lie in Software Engineering and Artificial Intellligence. This has largely determined the nature of projects that I've worked on. However, I have also worked on non-technical projects like this one, that focus on product development and ideas rather than the actual implementation (like <a href="#project-giveback-blockchain">this</a> and <a href="#project-oral-b">this</a>).
+                        My main interests in CS lie in Software Engineering and Artificial Intellligence. This has largely determined the nature of projects that I've worked on. However, I have also worked on non-technical projects that focus on product development and ideas rather than the actual implementation (like <a href="#project-giveback-blockchain">this</a> and <a href="#project-oral-b">this</a>). Working with large number of people from diverse backgrounds (academically as well as culturally) has taught me how to adjust to different kinds of people so that we can work together to sucessfully reach our goals.
+
                     </p>
                 </div>
+                <!-- End of text column -->
+
             </div>
+            <!-- End of bootstrap row -->
         </div>
+        <!-- End of bootstrap container -->
     </div>
     <!-- End #about -->
 

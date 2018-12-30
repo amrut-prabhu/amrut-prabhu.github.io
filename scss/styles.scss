@@ -469,6 +469,10 @@ footer {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
 
+    .heading {
+        margin-bottom: 10px;
+    }
+
     h2 {
         color: $heading;
     }
@@ -489,11 +493,8 @@ footer {
     font-size: 14px;
 
     img {
-        max-width: 600px;
+        max-width: 300px;
         width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
@@ -975,6 +976,15 @@ footer {
 
 // Collapse timeline
 @media only screen and (max-width: 750px) {
+
+    #amrut-photo {
+
+        img {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 
     #experience-timeline {
         &:before, &:after {

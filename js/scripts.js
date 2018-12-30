@@ -1,6 +1,6 @@
 /*!
-    Description: This file contains all the scripts associated with the single-page
-    portfolio website.
+    Description: This file contains all the scripts associated with the
+    single-page portfolio website.
 */
 
 (function($) {
@@ -20,13 +20,25 @@
 
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, 500); // Fixed scroll time of 500 ms
-        // }, Math.abs(window.pageYOffset - $(heading).offset().top) / 1.5); // Adjustable scroll speed
+        }, 500);
 
         // Hide the menu once clicked if mobile
         if ($('header').hasClass('active')) {
             $('header, body').removeClass('active');
         }
+    });
+
+    // Animate to section when hyperlink is clicked
+    $(document).ready(function() {
+        $('a[href*=\\#]').on('click', function(e){
+            e.preventDefault();
+
+            var hyperlink = $(this).attr('href');//this.hash;
+            var scrollDistance = $(hyperlink).offset().top;
+            $('html, body').animate({
+                scrollTop : scrollDistance + 'px'
+            }, 500);
+        });
     });
 
     // Animate to project when hyperlink is clicked
@@ -38,8 +50,7 @@
             var scrollDistance = $(hyperlink).offset().top - 90;
             $('html, body').animate({
                 scrollTop : scrollDistance + 'px'
-            }, 500); // Fixed scroll time of 500 ms
-            // }, Math.abs(window.pageYOffset - $(hyperlink).offset().top) / 1.5); // Adjustable scroll speed
+            }, 500);
         });
     });
 

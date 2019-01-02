@@ -46,6 +46,10 @@
         $('a[href*=\\#project-]').on('click', function(e){
             e.preventDefault();
 
+            $('#more-projects').fadeIn(300);
+            $('#view-less-projects').fadeIn(300);
+            $('#view-more-projects').fadeOut(300);
+
             var hyperlink = $(this).attr('href');//this.hash;
             var scrollDistance = $(hyperlink).offset().top - 90;
             $('html, body').animate({

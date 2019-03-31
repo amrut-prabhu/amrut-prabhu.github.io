@@ -37,7 +37,7 @@
             var scrollDistance = $(hyperlink).offset().top;
             $('html, body').animate({
                 scrollTop : scrollDistance + 'px'
-            }, 500);
+            }, 700);
         });
     });
 
@@ -54,7 +54,7 @@
             var scrollDistance = $(hyperlink).offset().top - 90;
             $('html, body').animate({
                 scrollTop : scrollDistance + 'px'
-            }, 500);
+            }, 700);
         });
     });
 

@@ -191,6 +191,11 @@ header {
 #menu {
     width: 100%;
 
+    li {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     &.active {
         display: block;
     }

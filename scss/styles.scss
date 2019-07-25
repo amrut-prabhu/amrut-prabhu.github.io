@@ -236,6 +236,14 @@ header {
     }
 }
 
+.v2-banner {
+    float: left;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+}
+
 footer {
     padding: 60px 0;
 }
@@ -1118,6 +1126,12 @@ footer {
             display: block;
             margin-bottom: 10px;
         }
+    }
+
+    .v2-banner {
+        width: fit-content;
+        float: none;
+        margin: auto;
     }
 
     #lead-content {

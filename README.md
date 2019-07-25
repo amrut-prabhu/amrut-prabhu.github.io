@@ -3,7 +3,7 @@
 ## Setup
 
 - Run `npm install` in order to get all the Gulp dev dependencies.
-- Run `Gulp watch` to compile the Sass and minify the JavaScript.
+- Run `gulp watch` to compile the Sass and minify the JavaScript.
 
   Alternatively, if you don't have Gulp installed globally, you can do `npm run watch`. Any changes done to the JavaScript (`js/scripts.js`) or Sass (`sass/styles.scss`) will be autocompiled and ready to go.
 

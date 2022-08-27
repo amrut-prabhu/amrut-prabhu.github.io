@@ -1,1 +1,1 @@
-Disallow: /resources/*
+Disallow: /resources/
